@@ -44,7 +44,7 @@ h1{
 .drum{
     height: 100px;
     width: 120px;
-    background-color: rgba(83, 80, 235, 0.179);
+    /* background-color: rgba(83, 80, 235, 0.179); */
     text-align: center;
     align-content: center;
     font-size: 2.5rem;
@@ -53,4 +53,21 @@ h1{
     overflow: hidden;
     transition: 0.2s all;
     cursor: pointer;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientBG 4s ease infinite;
+    color: white;
 }
+
+@keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
